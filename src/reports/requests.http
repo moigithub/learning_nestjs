@@ -1,0 +1,22 @@
+POST http://localhost:3000/reports
+Content-Type: application/json
+
+{
+  "make": "toyota",
+  "model": "corolo",
+  "year": 1990,
+  "mileage": 1231,
+  "price": 534234,
+  "lat": 0,
+  "lng": 0
+
+}
+
+
+### approve report
+PATCH http://localhost:3000/reports/2
+Content-Type: application/json
+
+{
+  "approved":true
+}
